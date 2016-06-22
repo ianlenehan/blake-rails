@@ -1,0 +1,7 @@
+<h1><%= @teacher.title %> <%= @teacher.name_last %></h1>
+<p>Students</p>
+<ul>
+  <% @teacher.students.each do |student| %>
+  <li><%= student.name_first %> <%= student.name_last %> - <%= link_to "View Progress", student_path(student) %></li>
+  <% end %>
+</ul>
