@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root :to => 'teachers#index'
   resources :teachers, :only => [:show]
-  resources :students, :only => [:show]
+  resources :students, :only => [:show, :index]
   resources :marks
 
 end
