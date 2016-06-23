@@ -32,3 +32,22 @@ body {
   padding: 10px;
   height: 100%;
 }
+
+#progress-container {
+  display: block;
+  width: 100vw;
+}
+
+.student-name {
+  width: 200px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  min-width: 5px;
+  background-color: green;
+  color: green;
+  display: inline-block;
+  margin: -2px;
+}
