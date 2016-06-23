@@ -26,11 +26,11 @@
 
 <h3>Lessons Completed</h3>
 <% if @student.marks.exists? %>
-<ul>
-  <% @student.marks.each do |mark| %>
-    <li>Lesson: <%= mark.lesson_id %> Part: <%= mark.part %> Mark: <%= mark.mark %>%
-  <% end %>
-</ul>
+  <ul>
+    <% @student.marks.each do |mark| %>
+      <li>Lesson: <%= mark.lesson_id %> Part: <%= mark.part %> Mark: <%= mark.mark %>%
+    <% end %>
+  </ul>
 <% else %>
-<p>No lessons completed yet.</p>
+  <p>No lessons completed yet.</p>
 <% end %>
