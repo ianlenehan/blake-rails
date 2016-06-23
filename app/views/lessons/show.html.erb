@@ -1,2 +1,2 @@
-<h1>Lessons#show</h1>
-<p>Find me in app/views/lessons/show.html.erb</p>
+<h1>Lesson number <%= @lesson.lesson_number %></h1>
+<p>This lesson has <%= @lesson.parts %> parts. <%= link_to "Edit Parts", edit_lesson_path %></p>
