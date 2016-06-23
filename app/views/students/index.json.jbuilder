@@ -1,6 +1,4 @@
-# json.extract! @student, :id, :question, :answer, :user_id, :flags, :created_at, :updated_at
-
-@students.each do |student|
+json.students @students do |student|
 
   json.student do
     json.first_name student.name_first

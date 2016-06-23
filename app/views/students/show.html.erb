@@ -1,4 +1,9 @@
 <h1><%= @student.name_first%> <%= @student.name_last %></h1>
+<p>Teacher:
+  <%= link_to teacher_path(@student.teacher.id) do %>
+    <%= @student.teacher.title %> <%= @student.teacher.name_last %></p>
+  <% end %>
+</p>
 
 <h3>Current Lesson</h3>
 
